@@ -1,3 +1,5 @@
+/*----------------------paramétres généraux----------------------------------------*/
+
 body {
     font-family: "Raleway", "Sans serif";
     margin: 0;
@@ -8,6 +10,7 @@ body {
     text-decoration: none;
   }
   
+  /*----------------------Header Navigation----------------------------------------*/
   .header {
     display: flex;
     justify-content:space-between;
@@ -15,8 +18,8 @@ body {
     margin: auto;
   }
   .headerImg {
-    padding: 0 2rem;
-    height: 2.813rem;
+    padding: 0 4px;
+    height: 46px;
   }
   .headerNav {
     display: flex;
@@ -30,5 +33,77 @@ body {
     border-bottom: 2px;
   }
   .headerNavLink[data-active=true]{
-      color: blue
+      color: blue/*a changer*/
+  }
+
+  @media sreen and (max-with: 650px) {
+    .header{
+      flex-direction: column;
+    }
+    .headerNavLink {
+    flex-direction: column;
+    }
+    .headerImg{
+      flex-direction: column;
+    }
+    .headerNav{
+      flex-direction: column;
+    }
+  }
+
+
+
+  /*----------------------Header button----------------------------------------*/
+  
+ .mainContainer{
+   margin: auto;
+   max-width: 1450px;
+   padding: 0 4px;
+   box-sizing: border-box;
+ }
+  .headerSearchTitle{
+    margin-bottom: 15px;
+  }
+  .headerSearchParagraph{
+    margin-top: 0px;
+    font-size: 12px;
+  }
+  .searchForm{
+    display: inline-flex;
+    overflow: auto;
+    height: 35px;
+  }
+  .searchFormIcone{
+    background-color: #F2F2F2;
+    text-align: center;
+    border-radius: 3px 0 0 3px;
+    padding: 6px 10px;
+  }
+  .searchFormInput{
+    font-weight: bold;
+    font-size: 12px;
+    box-sizing: border-box;
+    color: black;
+    border-top: #F2F2F2 solid 2px;
+    border-bottom: #F2F2F2 solid 2px;
+    border-right: none;
+    border-left: none;
+    padding: 0 5px;
+    width: 130px;
+  }
+  .searchFormInput::placeholder{
+    font-family: "raleway", "sans-serif";
+    color: black;
+    font-size: 12px;
+  }
+  .searchFormButton{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0 12px;
+    font-family: "raleway", "sans-serif";
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 12px;
   }
