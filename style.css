@@ -36,23 +36,6 @@ body {
       color: blue/*a changer*/
   }
 
-  @media sreen and (max-with: 650px) {
-    .header{
-      flex-direction: column;
-    }
-    .headerNavLink {
-    flex-direction: column;
-    }
-    .headerImg{
-      flex-direction: column;
-    }
-    .headerNav{
-      flex-direction: column;
-    }
-  }
-
-
-
   /*----------------------Header button----------------------------------------*/
   
  .mainContainer{
@@ -66,7 +49,7 @@ body {
   }
   .headerSearchParagraph{
     margin-top: 0px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .searchForm{
     display: inline-flex;
@@ -107,3 +90,66 @@ body {
     cursor: pointer;
     font-size: 12px;
   }
+
+   /*----------------------filter----------------------------------------*/
+
+   .filter{
+     display: flex;
+     margin-top: 20px;
+     flex-wrap: wrap;
+   }
+   .filterMainTitle{
+    display: flex;
+    align-items: center;
+    margin: 0px 15px 12px 0;
+    font-size: 15px;
+   }
+   .containerFilter{
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+     margin: 0 0 10px 15px;
+     border: solid 2px #F2F2F2;
+     border-radius: 50px;
+     height: 30px;
+   }
+   .filterIcon{
+     display: flex;
+     justify-content: center;
+     height: 31px;
+     width: 31px;
+     align-items: center;
+     border-radius: 100%;
+     color: blue;
+     background-color: rgb(184, 191, 250);
+   }
+   .filterTitle{
+     margin: 0 10px;
+     font-family: "raleway","sans-serif";
+     font-weight: bold;
+     font-size: 12px;
+   }
+   .informationPoint{
+     display: flex;
+     align-items: center;
+     margin: 15px 0 20px 0;
+   }
+   .informationPointIcon{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 100%;
+     height: 15px;
+     width: 15px;
+     border: solid 1px #d9d9d9d9;
+     background-color: #0065FC;
+     color: white;
+     margin: 0 15px 0 0;
+   }
+   .informationPointParagraph{
+    font-size: 14px;
+   }
+   
+   /*----------------------reservation----------------------------------------*/
+
+   
