@@ -14,9 +14,9 @@
         <img class="headerImg" src="./assets/images/logo/reservia.svg" alt="Reservia">
         <nav class="headerNav">
           <a class="headerNavLink" href="#host" data-active="true">Hébergement</a>
-          <a class="headerNavLink" href="#activity" data-active="false">Activités</a> 
-          <a class="headerNavLink" href="#" data-active="true">S'inscrire</a>
-        </nav>
+          <a class="headerNavLink" href="#activity" data-active="false">Activités</a>
+          <a class="headerNavLinkSign" href="#" data-active="true">S'inscrire</a> 
+        </nav> 
       </header>
 
  <!-------------------------------HEADER END----------------------------------------------------->
@@ -69,7 +69,7 @@
 	<div class="middleContainer">
 		<h1 class="mainContainerTitle">Hébergement à marseille</h1>
 <div class="hostMainContainer">
-	<div class="postReservation">
+	<a class="postReservation">
 		<img class="reservationImg" src="assets/images/hebergements/small/img7.jpg"></img>
 		<div class="reservationInfo">
 		<p class="reservationInfoParagraph"><strong>Auberge la Cannebére</strong></p>
@@ -82,8 +82,8 @@
               <i class="fas fa-star ReservationStarsIcon" data-active="false"></i>
             </div>
         </div>
-	</div>
-	<div class="postReservation">
+      </a>
+	<a class="postReservation">
 		<img class="reservationImg" src="assets/images/hebergements/small/img2.jpg"></img>
 	<div class="reservationInfo">
 	   <p class="reservationInfoParagraph"><strong>Hôtel du port</strong></p>
@@ -96,8 +96,8 @@
               <i class="fas fa-star ReservationStarsIcon" data-active="true"></i>
             </div>
         </div>
-    </div>
-	<div class="postReservation">
+      </a>
+	<a class="postReservation">
 		<img class="reservationImg" src="assets/images/hebergements/small/img9.jpg"></img>
 		<div class="reservationInfo">
 			<p class="reservationInfoParagraph"><strong>Hôtel les mouettes</strong></p>
@@ -110,8 +110,8 @@
               <i class="fas fa-star ReservationStarsIcon" data-active="false"></i>
               </div>
         </div>
-	</div>
-	<div class="postReservation">
+      </a>
+	<a class="postReservation">
 		<img class="reservationImg" src="assets/images/hebergements/small/img1.jpg"></img>
 		<div class="reservationInfo">
 			<p class="reservationInfoParagraph"><strong>Hôtel de la mer</strong></p>
@@ -124,8 +124,8 @@
               <i class="fas fa-star ReservationStarsIcon" data-active="false"></i>
               </div>
 	    </div>
-	</div>
-	<div class="postReservation">
+    </a>
+	<a class="postReservation">
 		<img class="reservationImg" src="assets/images/hebergements/small/img8.jpg"></img>
 		<div class="reservationInfo">
 			<p class="reservationInfoParagraph"><strong>Auberge le panier</strong></p>
@@ -138,8 +138,8 @@
               <i class="fas fa-star ReservationStarsIcon" data-active="false"></i>
               </div>
 	    </div>
-	</div>
-	<div class="postReservation">
+    </a>
+	<a class="postReservation">
 		<img class="reservationImg" src="assets/images/hebergements/small/img4.jpg"></img>
 		<div class="reservationInfo">
 		   <p class="reservationInfoParagraph"><strong>Hôtel chez Amina</strong></p>
@@ -152,15 +152,15 @@
               <i class="fas fa-star ReservationStarsIcon" data-active="true"></i>
               </div>
 	     </div>
+      </a>
 	</div>
-	</div>
-	<h3 class="mainContainerLastTitle">Afficher plus</h3>
+	<a class="mainContainerLastTitle" a href="#"><strong>Afficher plus</strong></a>
 </div>
 
-    <div class="asideTitleContainer">
+    <div class="asideMainContainer">
     	<h1 class="asideTitle">Les plus populaires</h1>
     <aside class="asideContainer">
-      <div class="popbloc">
+      <a class="popbloc">
 		<img class="asideImg" src="assets/images/hebergements/small/img5.jpg"></img>
 		<div class="asideReservationInfo">
 		<p class="asideReservationInfoParagraph"><strong>Hôtel le soleil du mâlin</strong>
@@ -173,8 +173,8 @@
               <i class="fas fa-star asideReservationStarsIcon" data-active="true"></i>
            </div>
         </div>
-	</div>
-	 <div class="popbloc">
+      </a>
+	 <a class="popbloc">
 		<img class="asideImg" src="assets/images/hebergements/small/img6.jpg"></img>
 		<div class="asideReservationInfo">
 		   <p class="asideReservationInfoParagraph"><strong>Au coeur de l'eau chambres d'hôtes</strong><br>
@@ -187,8 +187,8 @@
               <i class="fas fa-star asideReservationStarsIcon" data-active="false"></i>
            </div>
         </div>
-	</div> 
-	 <div class="popbloc">
+      </a> 
+	 <a class="popbloc">
 		<img class="asideImg" src="assets/images/hebergements/small/img3.jpg"></img>
 		<div class="asideReservationInfo">
 		   <p class="asideReservationInfoParagraph"><strong>Hôtel tout bleu et blanc</strong><br>
@@ -201,45 +201,56 @@
               <i class="fas fa-star asideReservationStarsIcon" data-active="false"></i>
            </div>
         </div>
-	</div>
+      </a>
     </aside>
    </div>
 </section>
 <!-------------------------------------ACTIVITY-------------------------------------------------->
-
 <section class="activity" id="activity">
-  <h1 class="activityTitle">Activités à marseille</h1>
-  <div class="activityMainContainer">
-      <div class="activitylargeBolc">
-          <img class="activitylargeImg" src="assets/images/activites/small/paysage2.jpg"></img>
-          <p class="activityParagraph"><strong>Vieux port</strong></p>
+    <h2 class="activityTitle">Activités à Marseille</h2>
+    <a href="#" class="activityItems activityItems1">
+      <div class="activityItemsWrapmode">
+        <img  class="activityItemsImg"src="assets/images/activites/small/paysage2.jpg">  
       </div>
-      <div class="activitySmallBolc">
-           <div class="smallBloc">
-              <img class="activitySmallImg" src="assets/images/activites/small/paysage3.jpg"></img>
-              <p class="activitySmallParagraph"><strong>Fort de Pontégues</strong></p>
-          </div>
-        <div class="smallLittleBloc">
-               <img class="activitySmallLittleImg" src="assets/images/activites/small/paysage6.jpg"></img>
-               <p class="activitySmallParagraph"><strong>Île du Frioul</strong></p>
-        </div>
-    </div>
-    <div class="activitylargeBolc">
-      <img class="activitylargeImg" src="assets/images/activites/small/paysage5.jpg"></img>
-      <p class="activityParagraph"><strong>Parc National des Calanques</strong></p>
-  </div>
-  <div class="activitySmallBolc">
-          <div class="smallLittleLastBloc">
-             <img class="activitySmallLittleImg" src="assets/images/activites/small/paysage1.jpg"></img>
-             <p class="activitySmallParagraph"><strong>Notre-Dame-de-la-Garde</strong></p>
-          </div>
-          <div class="smallBloc">
-             <img class="activitySmallImg" src="assets/images/activites/small/paysage4.jpg"></img>
-             <p class="activitySmallParagraph"><strong>Parc Longchamp</strong></p>
-          </div>
-</div>
-</div>
-</section>
+      <h3 class="activityItemsTitle">Vieux Port</h3>
+    </a>
+
+    <a href="#" class="activityItems activityItems2">
+      <div class="activityItemsWrapmode">
+        <img class="activityItemsImg"src="assets/images/activites/small/paysage3.jpg">
+      </div>
+      <h3 class="activityItemsTitle">Fort de Pomègues</h3>
+    </a>
+
+    <a href="#" class="activityItems activityItems3">
+      <div class="activityItemsWrapmode">
+        <img  class="activityItemsImg"src="assets/images/activites/small/paysage6.jpg"> 
+      </div>
+      <h3 class="activityItemsTitle">Parc National des Calanques</h3>
+    </a>
+
+    <a href="#" class="activityItems activityItems4">
+      <div class="activityItemsWrapmode">
+        <img  class="activityItemsImg" src="assets/images/activites/small/paysage5.jpg">
+      </div>
+      <h3 class="activityItemsTitle">Notre-Dame-de-la-Garde</h3>
+    </a>
+
+    <a href="#" class="activityItems activityItems5">
+      <div class="activityItemsWrapmode">
+        <img class="activityItemsImg"src="assets/images/activites/small/paysage1.jpg">   
+      </div>
+      <h3 class="activityItemsTitle">Île du Frioul</h3>
+    </a>
+
+    <a href="#" class="activityItems activityItems6">
+      <div class="activityItemsWrapmode">
+        <img class="activityItemsImg"src="assets/images/activites/small/paysage4.jpg">
+      </div>    
+      <h3 class="activityItemsTitle">Parc Longchamp</h3>
+    </a>
+  </section>
+
 <!-- ---------------------------------------footer---------------------------------- -->
 <footer>
     <div class="footerMenu">
@@ -260,18 +271,5 @@
     </div>
 </footer>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>
