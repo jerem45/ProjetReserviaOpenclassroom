@@ -6,7 +6,7 @@ body {
     max-width: 1450px;
     padding: 0 4px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 16px;
     color: black;
   }
   
@@ -60,11 +60,11 @@ body {
     }
     .headerNavLink {
       border-bottom: 2px solid #F2F2F2;
-      font-size: 14px;
+      font-size: 16px;
     } 
     .headerNavLinkSign{
      padding: 0;
-     font-size: 14px;
+     font-size: 16px;
     }
   }
 
@@ -90,14 +90,13 @@ body {
   .searchFormInput{
     font-weight: bold;
     font-size: 12px;
-    box-sizing: border-box;
     color: black;
     border-top: #F2F2F2 solid 2px;
     border-bottom: #F2F2F2 solid 2px;
-    border-right: none;
-    border-left: none;
     padding: 0 5px;
     width: 130px;
+    border-right: none;
+    border-left: none;
   }
   .searchFormInput::placeholder{
     font-family: "raleway", "sans-serif";
@@ -157,6 +156,10 @@ body {
      border-radius: 50px;
      height: 30px;
    }
+   .containerFilter:hover, .filterIcon:hover{
+     color: #0065FC;
+     border-radius: 0 0 0 0;
+   }
    .filterIcon{
      display: flex;
      justify-content: center;
@@ -167,6 +170,7 @@ body {
      color: blue;
      background-color: #F2F2F2;
    }
+   
    .filterTitle{
      margin: 0 10px;
      font-family: "raleway","sans-serif";
@@ -355,7 +359,7 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .popbloc{
+  .popblock{
    opacity: 1;
    cursor: pointer;
    background-color: white;
@@ -368,7 +372,7 @@ body {
    display: flex;
    padding: 2px;
   }
-  .popbloc:hover {
+  .popblock:hover {
     opacity: 0.7;
   }
   .asideImg{
