@@ -7,12 +7,15 @@ body {
     padding: 0 4px;
     box-sizing: border-box;
     font-size: 14px;
-    color: black;
   }
-  
   a {
-    color: inherit;
+    color: black;
     text-decoration: none;
+  }
+  @media(max-width: 700px){
+    body{
+      margin:0 1% 0 1%;
+    }
   }
   @media(max-width: 600px){
     body{
@@ -56,7 +59,8 @@ body {
       flex-direction: column;
     }
     .headerNav{
-      width: 50%;
+      width: 100%;
+      justify-content: center;
     }
     .headerNavLink {
       border-bottom: 2px solid #F2F2F2;
@@ -77,7 +81,7 @@ body {
     margin-top: 0px;
   }
   .searchForm{
-    display: inline-flex;
+    display: flex;
     overflow: auto;
     height: 35px;
   }
@@ -190,8 +194,8 @@ body {
      border-radius: 100%;
      height: 15px;
      width: 15px;
-     color:#d9d9d9;
-     background-color: blue;
+     color: blue;
+     background-color: #d9d9d9;
      margin: 0 15px 0 0;
    }
    @media(max-width: 600px){
@@ -316,7 +320,9 @@ body {
     .postReservation{
      border: 1px solid #F2F2F2;
      color: white;
-     width: 80%;  
+     width: 100%; 
+     height: auto; 
+     padding: 0;
     }
     .reservationInfo{
    margin: 5px 0 0 7px;
@@ -351,13 +357,15 @@ body {
   }
   .asideTitle{
   margin: 15px 0 0 20px;
+  display: flex;
+  justify-content: space-around;
   }
   .asideContainer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    height: 100%;
   }
   .popblock{
    opacity: 1;
@@ -366,7 +374,7 @@ body {
    border-radius:20px;
    border: 1px solid white;
    width: 80%;
-   height: 115px;
+   height: 20%;
    overflow: hidden;
    margin: 14px;
    display: flex;
@@ -383,6 +391,7 @@ body {
   .asideReservationInfo{
     padding: 2px;
     margin: 5px 0 0 0px ;
+    font-size: 16px;
 
   }
   .asideReservationInfoParagraph{
@@ -400,20 +409,33 @@ body {
   .asideReservationStarsIcon[data-active=false] {
     color: #d9d9d9;
   }
- 
   @media(max-width: 600px){
     .asideMainContainer{
-      background-color: #d9d9d9;
-      width: 90%;
-      border-radius: 0 0 0 0;
+      background-color: #F2F2F2;
+      width: 100%;
+      border: solid #F2F2F2 1px;
+      border-radius: 0;
+      height: auto;
+    }
+    .asideContainer{
+      height: auto;
+      width: auto;
+    }
+    .popblock{
+     width: 80%;
+     height: 25%;
+     margin-top: 10px;
+    }
+    .asideReservationInfo{
+      padding: 10px;
+    }
+    .asideReservationInfoParagraph{
+      width: 100%;
     }
     .asideImg{
       width: 45%;
       height: 100%;
-      border-radius: 15px 0 0 15px;
-    }
-    .asideReservationInfoParagraph{
-       font-size: 14px;
+      border-radius: 20px 0 0 20px;
     }
   }
   /* ----------------------------MARSEILLE ACTIVITY----------------------------------- */
@@ -446,9 +468,10 @@ body {
   }
   .activityItemsTitle {
     margin: 16px 20px;
+    font-size: 14px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 900px) {
     .activity {
       grid-template-rows: auto 220px 30px 30px 30px 220px;
       grid-template-columns: repeat(1fr 1fr 1fr 1fr 1fr);
@@ -478,11 +501,12 @@ body {
       grid-row: 4/7;
     }
   }
-  @media (max-width: 1200px) {
+  @media (max-width: 900px) {
     .activity {
-      row-gap: 30px;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto 180px 180px 180px;
+      row-gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto 180px 180px;
+      margin-bottom: 35px;
     }
   }
   @media (max-width: 600px) {
@@ -499,7 +523,7 @@ footer{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 50px;
+  margin:auto;
   background-color: #F2F2F2;
   width: 100%;
   height: 150px;
@@ -527,15 +551,13 @@ footer{
     flex-direction: column; 
     margin-top: 40px;
     height: 340px;
-  }
-  .footerMenu{
-   margin-left: 30px;
+    padding: 20px;
   }
   .footerMenu li{
       margin-top: 5px;
     }
 }
-@media(max-width: 882px){
+@media(max-width: 1050px){
   .hostContainer{
     height: auto;
   }
@@ -543,26 +565,29 @@ footer{
     height:60%;
   }
   .asideReservationInfoParagraph{
-    font-size: 10px;
+    font-size: 14px;
   }
  .reservationInfoParagraph{
-  font-size: 10px;
+  font-size: 14px;
   }
   .activityMainContainer{
-    height: 310px;
+    height: 450px;
   }
   .activityParagraph, .activitySmallParagraph{
-    font-size: 10px;
+    font-size: 14px;
 }
   .postReservation{
-  height: 150px;
+  height: 220px;
 }
   .popblock{
-  height: 80px;
+  height: 130px;
+  width: 85%;
 }
   .asideReservationInfo{
   margin: 0;
 }
   .asideReservationStars{
-  margin-top: 20px;
+  margin-top: 40px;
+  font-size: 12px;
+}
 }
