@@ -32,7 +32,7 @@ body {
   }
   .headerImg {
     padding: 0 4px;
-    height: 46px;
+    height: 50px;
   }
   .headerNav {
     display: flex;
@@ -171,7 +171,7 @@ body {
      width: 31px;
      align-items: center;
      border-radius: 100%;
-     color: blue;
+     color: #0065FC;
      background-color: #F2F2F2;
    }
    
@@ -284,7 +284,6 @@ body {
   }
   .postReservation:hover{
     opacity: 0.7;
-  
   }
   .postReservation img{
     width: 100%;
